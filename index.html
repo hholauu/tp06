@@ -5,15 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP06</title>
-    <style>
-        #imp {
-            background-color: #f4cccc;
-
-            border: 1px solid #e06666;
-
-            border-collapse: collapse;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,18 +13,17 @@
 
         <h1>Trabajo 06 - empezamos con el diseño</h1>
 
-        <h2>Lautaro Ibañez</h2>
+        <h2 id="lau">Lautaro Ibañez</h2>
 
     </header>
     <main>
-
+        
         <h3>Objetivos:</h3>
         <ul>
             <li>Familiarizar a los estudiantes con las características y sintaxis de CSS.</li>
             <li>Crear estilos básicos para sus páginas web.</li>
             <li>Ayudar a los estudiantes a entender cómo se relacionan los estilos con el HTML.</li>
-            <li>Ayudar a los estudiantes a entender la anatomía de CSS, incluyendo selectores, propiedades y valores.
-            </li>
+            <li>Ayudar a los estudiantes a entender la anatomía de CSS, incluyendo selectores, propiedades y valores.</li>
         </ul>
 
         <table id="imp">
@@ -53,13 +44,214 @@
             </tr>
         </table>
 
+        <p>Para realizar esta actividad tendrás que ayudarte de:</p>
+        <p>
+            Índice CSS: Enlace a <a href="https://developer.mozilla.org/es/docs/Learn/CSS" target="_blank">MDN</a> <br>
+            CSS básico: Enlace a <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">MDN</a> <br>
+            CSS en cuadernillo: <a href="http://web.xn--ensead-zwa.com.ar/docs/css/">Enlace al Cuadernillo</a>
+        </p>
+
+        <p>Actividad:</p>
+        <p>
+            Tener en cuenta que se deben incorporar las etiquetas aprendidas (si fuera necesario) de las prácticas
+            anteriores:
+        </p>
+        <p>
+            strong <br>
+            i <br>
+            u <br>
+            sub <br>
+            sup <br>
+            em <br>
+            span <br>
+            br <br>
+            img <br>
+            a <br>
+            ul <br>
+            ol <br>
+            dl
+        </p>
+
+        <h2>Ejercicio 1: Entendiento CSS</h2>
+
         <h3>
             1.1- ¿Qué significa CSS?
         </h3>
         <p>
-            CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje que maneja el
-            diseño y presentación de las páginas web (HTML o XML).
+            CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje que maneja el diseño y presentación de las páginas web (HTML o XML).
         </p>
+
+        <h3>
+            1.2- ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS? (es para 🧠)<a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS#%C2%BFpara_qu%C3%A9_sirve_el_css" target="_blank">Guía de conceptos</a>
+        </h3>
+        <p>Funciona junto con el lenguaje HTML que se encarga del contenido básico de los sitios.</p>
+
+        <h3>
+            1.3- ¿A qué se llama regla de CSS?
+        </h3>
+        <p>Una regla css se compone de uno o más selectores seguidos de una declaración que consta de una o más parejas de propiedad y valor.</p>
+
+        <h3>
+            1.4- ¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva explicar sus elementos.
+        </h3>
+        <img src="assets/css.jpg" alt="imgcss" height="300px">
+        <dl>
+            <dt>Selector:</dt>
+            <dd>
+                El elemento HTML en el que comienza la regla (en este caso p). Este selecciona los elementos a dar estilo.
+            </dd>
+            <dt> declaración:</dt>
+            <dd>
+                Una sola regla como color: red; especifica a cuál de las propiedades del elemento quieres dar estilo.
+            </dd>
+            <dt>Propiedad:</dt>
+            <dd>
+                Maneras en las cuales puedes dar estilo a un elemento HTML (en este caso, color es una propiedad del elemento p) En CSS, seleccionas que propiedad quieres afectar en tu regla.
+            </dd>
+            <dt>Valor de propiedad:</dt>
+            <dd>
+                A la derecha de la propiedad, después de los puntos (:) tenemos el valor de la propiedad, para elegir una de las muchas posibles apariencias para una propiedad determinada (hay muchos valores para color red.)
+            </dd>
+        </dl>
+
+        <h3>
+            1.5- ¿Qué es un selector en CSS?
+        </h3>
+        <p>Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.</p>
+
+        <h3>
+            1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.
+        </h3>
+        <dl>
+            <dt>ID:</dt>
+            <dd>
+                Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.
+            </dd>
+            <dt>clase:</dt>
+            <dd>
+                Selecciona todos los elementos que tienen el atributo de class especificado.
+            </dd>
+            <dt>universal:</dt>
+            <dd>
+                El selector universal CSS coincide con elementos de cualquier tipo.
+            </dd>
+            <dt>etiqueta:</dt>
+            <dd>
+                Se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos aplicar estilo.
+            </dd>
+            <dt>descendente:</dt>
+            <dd>
+                Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo.
+            </dd>
+        </dl>
+
+        <h3>
+            1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS? <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_works#%C2%BFc%C3%B3mo_funciona_realmente_el_css" target="_blank">Guía para respuesta</a>
+        </h3>
+        <ol>
+            <li>
+                El navegador carga el HTML (por ejemplo, lo recibe de la red).
+            </li>
+            <li>
+                Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria del ordenador. Lo explicaremos más detalladamente en la sección siguiente.
+            </li>
+            <li>
+                Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las imágenes y los videos incrustados... ¡y también el CSS vinculado! JavaScript aparece un poco más adelante en el proceso, pero no vamos a hablar de ello aún para evitar complicar las cosas.
+            </li>
+            <li>
+                El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector. Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que encuentre, calcula qué reglas deben aplicarse y a qué nodos en el DOM se les aplica el estilo según corresponda (este paso intermedio se llama árbol de renderización).
+            </li>
+            <li>
+                El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las reglas.
+            </li>
+            <li>
+                En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).
+            </li>
+        </ol>
+
+        <h3>
+            1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?
+        </h3>
+        <p><u>Vinculación externa:</u> Esta es la forma más común y recomendada. Consiste en crear un archivo CSS separado con extensión .css y luego vincularlo en el documento HTML utilizando la etiqueta link.</p>
+        <p><u>Estilos internos:</u> También puedes incluir los estilos CSS directamente en el archivo HTML utilizando la etiqueta style. Los estilos definidos dentro de esta etiqueta se aplicarán solo al documento HTML actual.</p>
+        <p><u>Estilos en línea:</u> Puedes aplicar estilos CSS directamente en los elementos HTML utilizando el atributo style. Esto es útil cuando deseas aplicar estilos específicos a un elemento individual y no se necesita un archivo CSS separado.</p>
+
+        <h3>
+            1.9- Ingrese al sitio CSS <a href="http://www.csszengarden.com">Zen Garden</a> y analicemos el código HTML siguiendo los siguientes pasos:
+        </h3>
+        <ul><strong><li>Hacer clic en View All Designs</li><li>Elegir dos diseños y abrirlo en pestañas distintas</li><li>En el primer diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el navegador)</li><li>En el segundo diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el navegador)</li><li>Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿son iguales? ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?</li><li>Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?</li><li>En líneas generales, el mismo HTML ¿puede tener diferentes diseños?</li></strong></ul>
+        <p><a href="http://www.csszengarden.com/219/">http://www.csszengarden.com/219/</a><br><a href="http://www.csszengarden.com/201/">http://www.csszengarden.com/201/</a></p>
+
+        <p>Las etiquetas y el body son iguales.</p>
+        <p>Es diferente el css y el head es diferente.</p>
+        <p>El mismo html puede tener muchisimos diseños diferentes.</p>
+
+        <h2>Ejercicio 2: Práctica Inicial de CSS</h2>
+
+        <table>
+            <tr>    
+                <th>Propiedad</th>
+                <th>|Descripcion</th>
+                <th>|Valores posibles</th>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>define el color del texto</td>
+                <td>|valor posible "#355c7d"</td>   
+            </tr>
+            <tr>
+                <td>background-color</td>        
+                <td>Define el color de fondo de un elemento</td>
+                <td>|valor posible "#6c5b7b"</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Define el tamaño de la fuente del texto.</td>
+                <td>|valor posible "xx-small"</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>    
+                <td>Define el grosor de la fuente del texto</td>
+                <td>|valor posible "100"</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>define el estilo de la fuente</td>
+                <td>valor posible "italic"</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>define el tipo de letra</td>
+                <td>valores posibles "nombre de familia"</td>
+            </tr>    
+            <tr>
+                <td>text-align</td>
+                <td>define la alineacion</td>
+                <td>valores posibles "center"</td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td>define la decoracion</td>
+                <td>valor posble "none"</td>
+            </tr>
+            <tr>
+                <td>text-transform</td>
+                <td>define la transformacion</td>
+                <td>valor posible "none"</td>
+            </tr>
+            <tr>
+                <td>letter-spacing</td>
+                <td>define el espacio entre lineas</td>
+                <td>valor posible "normal"</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>define la altura</td>
+                <td>valor posible "1.2"</td>
+            </tr>
+    
+            
+        </table>
 
     </main>
     <footer>

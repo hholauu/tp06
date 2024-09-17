@@ -1,0 +1,54 @@
+#imp {
+    background-color: #E0C3FC;
+
+    border: 1px solid #a05bce;
+
+    border-collapse: collapse;
+}
+
+body {
+    background-color: #161A1D;
+}
+
+h1 {
+    color: #16003a;
+    background-color: #E0C3FC;
+    text-align: center;
+}
+
+h2,
+ol {
+    color: #BBADFF;
+}
+
+h3,
+ul {
+    color: #E0AAFF;
+}
+
+dl {
+    color: #BBADFF;
+    text-indent: 10px;
+}
+
+p {
+    color: #BBADFF;
+}
+
+#lau {
+    color: #d2c8ff;
+    text-shadow: 0px 0px 20px #b5a7ff;
+}
+
+header {
+    /*
+    border-bottom-color: #E0C3FC;
+    border-bottom-style:double;
+    border-bottom-width: 5px;
+    */
+    border-bottom: #E0C3FC solid 5px;
+}
+
+a {
+    color: #0BD4B9;
+}
