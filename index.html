@@ -189,6 +189,10 @@
 
         <h2>Ejercicio 2: Práctica Inicial de CSS</h2>
 
+        <h3>Vamos a realizar una actividad práctica de CSS  💻</h3>
+
+        <h3>2.0- Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada propiedad.</h3>
+
         <table>
             <tr>    
                 <th>Propiedad</th>
@@ -254,7 +258,92 @@
             
         </table>
 
+        <h3>2.1- Crea un archivo HTML con la estructura básica de una página web, agregar como título “Práctica de CSS”. Crea un encabezado de página con el mismo título, agrega un subtítulo con tu Nombre y Apellido. </h3>
+
+        <h3>2.2- Crea una hoja de estilos CSS y vincularla a tu archivo HTML:</h3>
+        <ul>
+            <li><b>Crea un archivo nuevo en el mismo directorio que tu archivo HTML. Debe llamarse estilos.css</b></li>
+            <li><b>En este punto aprenderás cómo agregar un comentario en un CSS. Dentro del archivo creado, escribe el siguiente código para la estructura básica de tu hoja de estilos CSS:</b></li>
+        </ul>
+        <h3>/* Estilos para la página web */</h3>
+
+        <ul>
+            <li><b>Vincula tu hoja de estilos CSS a tu archivo HTML, puedes usar como guía la pregunta 1.8.  Agregar la siguiente línea de código en el encabezado de tu archivo HTML:</b></li>
+        </ul>
+        <h3>&lt;link rel="stylesheet" type="text/css" href="estilos.css"></h3>
+
+        <ul>
+            <li><b>Asegúrate de que el valor del atributo href apunte al nombre de tu archivo CSS.</b></li>
+        </ul>
+
+        <h3>
+            2.3- Utiliza selectores por etiquetas para aplicar estilos a las etiquetas HTML, como el tamaño de fuente, el color de fondo y el color del texto:
+        </h3>
+
+        <ul>
+            <li>
+                <b>Utiliza el selector body para aplicar estilos al cuerpo de la página, como el color de fondo y el tamaño de fuente. <br>
+                    body { <br>  
+                    background-color: #f2f2f2; <br>  
+                    font-size: 16px; <br>
+                    }
+                </b>
+            </li>
+            <li>
+                <b>
+                    Utiliza el selector h1 para aplicar estilos al encabezado de la página, como el tamaño de fuente y el color del texto. <br>
+                    h1 {  <br>
+                    font-size: 36px; <br>  
+                    color: #333; <br>
+                    }
+                </b>
+            </li>
+            <li>
+                <b>
+                    Utiliza el selector p para aplicar estilos al contenido de la página, como el tamaño de fuente y el color del texto a elección.
+                </b>
+            </li>
+        </ul>
+
+        <h3>
+            2.4- En este punto aprenderás a utilizar selectores por clase para aplicar estilos a elementos específicos de la página, como los encabezados, los párrafos, las imágenes, botones, etc:
+        </h3>
+
+        <ul>
+            <li>Agrega una clase encabezado a tu encabezado de la página para aplicar estilos específicos a ese elemento.</li>
+        </ul>
+
+        <dl>
+            <dt><u>En el HTML</u></dt>
+            <dd>&lt;h1 class="encabezado">Práctica de CSS&lt;/h1></dd>
+            <dt><u>En el CSS</u></dt>
+            <dd>#fondo {  <br>
+                background-color: #aa3b3b; /* modificar el color a elección */ <br>
+                }
+            </dd>
+        </dl>
+
+        <h3>2.6- Utiliza selectores descendentes para aplicar estilos a elementos dentro de otros elementos, como un enlace dentro de un párrafo:</h3>
+
+        <ul>
+            <li>Agrega un enlace a un párrafo en tu página. <br>
+                &lt;p>Este es un párrafo de ejemplo. &lt;a href="#">Haz clic aquí&lt;/a> para obtener más información.&lt;/p></li>
+                <li>
+                    
+                    Utiliza un selector descendente para aplicar estilos al enlace dentro del párrafo. ¿Qué se modifica? <br>
+                    p a {  <br>
+                    color: #333;  <br>
+                    text-decoration: none; <br>
+                    }
+                    
+                </li>
+                <li>
+                    Utiliza las propiedades de CSS que se han presentado, como font-weight. Crea un ejemplo para cada una de ellas utilizando una clase para cada una.
+                </li>
+        </ul>
+
     </main>
+    
     <footer>
         ©Lautaro Ibañez 2024
     </footer>
